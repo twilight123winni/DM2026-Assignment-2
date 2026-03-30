@@ -35,10 +35,10 @@ def evaluate_linear_regression(y_true, y_pred, title='Linear Regression Evaluati
 
     # TODO 
     metrics = {
-        'MSE': 'TODO: use sklearn.metrics to compute MSE',
-        'MAE': 'TODO: use sklearn.metrics to compute MAE',
-        'RMSE': 'TODO: use sklearn.metrics and numpy to compute RMSE',
-        'R-squared': 'TODO: use sklearn.metrics to compute R-squared',
+        'MSE': mean_squared_error(y_true,y_pred),
+        'MAE': mean_absolute_error(y_true,y_pred),
+        'RMSE': np.sqrt(mean_squared_error(y_true, y_pred)),
+        'R-squared': r2_score(y_true,y_pred)
     }
 
     print(f"=== {title} ===")

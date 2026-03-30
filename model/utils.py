@@ -8,13 +8,14 @@ import pandas as pd
 
 def onehot_array(x,n_class):
 	return np.eye(n_class)[x]
-def get_train_val(X,y,val_ratio=0.2,shuffle=False):
+
+def get_train_val(X,y,val_ratio=0.2,shuffle=False): #分割資料為測試集/驗證集
 	n = X.shape[0]
 	if shuffle:
 		idx = np.random.permutation(n)
 		X,y = X[idx],y[idx]
-	val_size = int(n*val_ratio)
-	return X[:n-val_size,:],y[:n-val_size], X[-val_size:,:],y[-val_size:]
+	val_size = int(n*val_ratio) # 總數 x 多少比例資料要拿去做驗證
+	return X[:n-val_size,:],y[:n-val_size], X[-val_size:,:],y[-val_size:] #output: testset/validation set
 
 def batch_iterator(X,y=None,bs=64):
 	for i in range((X.shape[0]-1) // bs + 1):
