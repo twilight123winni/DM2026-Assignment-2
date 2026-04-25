@@ -11,7 +11,7 @@ def initialize_weight(dim):
 class LinearModel(BaseEstimator, ClassifierMixin):
 	def __init__(self, dim=None, is_reg=False, loss_fn=None, grad_fn=None, act_fn=None,
 				 lr=0.1, reg_type='', reg_lambda=0, n_iteration=50, val_ratio=.2,
-				 random_state=None, verbose=True, plot_curve=True):
+				 random_state=None, verbose=True, plot_curve=False):
 		self.dim = dim
 		self.is_reg = is_reg
 		self.loss_fn = loss_fn
