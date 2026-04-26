@@ -118,3 +118,4 @@ class LinearModel(BaseEstimator, ClassifierMixin):
 		if self.is_reg:
 			return r2_score(y, y_pred)
 		return accuracy_score(y, y_pred)
+	
