@@ -5,13 +5,14 @@ You can fork this repository
 
 ```text
 .
-├── Real_World_Classification.ipynb          
+├── Real_World_Classification.ipynb     
+├── Mobile_Price_Classification.ipynb      
 ├── README.md                                
-├── data/                                    
+├── data/                                    # Update
 └── model/                                   
 	├── activations.py                       
-	├── gradients.py                         #1. Linear Regression, 2. Logistic Regression
-	├── linear_model.py                      #1. Real World Classification
-	├── metrics.py                           #1. Linear Regression, 2. Logistic Regression
+	├── gradients.py                         
+	├── linear_model.py                      # Update
+	├── metrics.py                          
 	└── utils.py                             
 ```
