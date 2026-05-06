@@ -4,8 +4,9 @@
 
 ```text
 .
-├── Real_World_Classification.ipynb     
-├── Mobile_Price_Classification.ipynb      
+├── Real_World_Classification.ipynb          # Question 1
+├── Mobile_Price_Classification.ipynb        # Question 2 ~ 4
+├── kmeans_assoc.ipynb  					 # Question 5
 ├── README.md                                
 ├── data/                                    # Update
 └── model/                                   
